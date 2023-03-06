@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC46899C-43DE-48E6-8C32-84FFBB85E22A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Taqueria</RootNamespace>
+    <AssemblyName>Taqueria</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBCategoria.Designer.cs">
+      <DependentUpon>frmBCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBCliente.Designer.cs">
+      <DependentUpon>frmBCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBProveedor.Designer.cs">
+      <DependentUpon>frmBProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarne.Designer.cs">
+      <DependentUpon>frmCarne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategorias.Designer.cs">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmECategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmECategoria.Designer.cs">
+      <DependentUpon>frmECategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmECliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmECliente.Designer.cs">
+      <DependentUpon>frmECliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEProveedor.Designer.cs">
+      <DependentUpon>frmEProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmICategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmICategorias.Designer.cs">
+      <DependentUpon>frmICategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIProveedores.Designer.cs">
+      <DependentUpon>frmIProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNCategoria.Designer.cs">
+      <DependentUpon>frmNCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNCliente.Designer.cs">
+      <DependentUpon>frmNCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNProveedor.Designer.cs">
+      <DependentUpon>frmNProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPricipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPricipal.Designer.cs">
+      <DependentUpon>frmPricipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedor.Designer.cs">
+      <DependentUpon>frmProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBCategoria.resx">
+      <DependentUpon>frmBCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBCliente.resx">
+      <DependentUpon>frmBCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBProveedor.resx">
+      <DependentUpon>frmBProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarne.resx">
+      <DependentUpon>frmCarne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategorias.resx">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmECategoria.resx">
+      <DependentUpon>frmECategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmECliente.resx">
+      <DependentUpon>frmECliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEProveedor.resx">
+      <DependentUpon>frmEProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmICategorias.resx">
+      <DependentUpon>frmICategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIProveedores.resx">
+      <DependentUpon>frmIProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNCategoria.resx">
+      <DependentUpon>frmNCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNCliente.resx">
+      <DependentUpon>frmNCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNProveedor.resx">
+      <DependentUpon>frmNProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPricipal.resx">
+      <DependentUpon>frmPricipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedor.resx">
+      <DependentUpon>frmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{8cf6cb2b-ade8-4594-90b0-dd8f23cb3431}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOL\BOL.csproj">
+      <Project>{afc58f11-760e-4ff3-b4fb-dab9d0072344}</Project>
+      <Name>BOL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

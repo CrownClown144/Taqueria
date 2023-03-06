@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taqueria", "Taqueria\Taqueria.csproj", "{DC46899C-43DE-48E6-8C32-84FFBB85E22A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. ViewLayer", "1. ViewLayer", "{D378B127-DF09-4232-ABCE-8B1634082525}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. BussinerLogicLayer", "2. BussinerLogicLayer", "{C0C09204-9DE3-43E9-9930-5C6979E93613}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. BussinerObjectLayer", "3. BussinerObjectLayer", "{8814AB29-384E-4158-8415-0C2CA5716B76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. DataAccessLayer", "4. DataAccessLayer", "{58B84CD9-8016-4FBE-8144-F5B8CD5DF0A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A0427FC8-2A92-4D7A-99DE-902080F1F3D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{8CF6CB2B-ADE8-4594-90B0-DD8F23CB3431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOL", "BOL\BOL.csproj", "{AFC58F11-760E-4FF3-B4FB-DAB9D0072344}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC46899C-43DE-48E6-8C32-84FFBB85E22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC46899C-43DE-48E6-8C32-84FFBB85E22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC46899C-43DE-48E6-8C32-84FFBB85E22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC46899C-43DE-48E6-8C32-84FFBB85E22A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0427FC8-2A92-4D7A-99DE-902080F1F3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0427FC8-2A92-4D7A-99DE-902080F1F3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0427FC8-2A92-4D7A-99DE-902080F1F3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0427FC8-2A92-4D7A-99DE-902080F1F3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF6CB2B-ADE8-4594-90B0-DD8F23CB3431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF6CB2B-ADE8-4594-90B0-DD8F23CB3431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF6CB2B-ADE8-4594-90B0-DD8F23CB3431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF6CB2B-ADE8-4594-90B0-DD8F23CB3431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC58F11-760E-4FF3-B4FB-DAB9D0072344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC58F11-760E-4FF3-B4FB-DAB9D0072344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC58F11-760E-4FF3-B4FB-DAB9D0072344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC58F11-760E-4FF3-B4FB-DAB9D0072344}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC46899C-43DE-48E6-8C32-84FFBB85E22A} = {D378B127-DF09-4232-ABCE-8B1634082525}
+		{A0427FC8-2A92-4D7A-99DE-902080F1F3D4} = {58B84CD9-8016-4FBE-8144-F5B8CD5DF0A6}
+		{8CF6CB2B-ADE8-4594-90B0-DD8F23CB3431} = {C0C09204-9DE3-43E9-9930-5C6979E93613}
+		{AFC58F11-760E-4FF3-B4FB-DAB9D0072344} = {8814AB29-384E-4158-8415-0C2CA5716B76}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D636E7A-CB18-4700-AF71-C68F48AA23A1}
+	EndGlobalSection
+EndGlobal

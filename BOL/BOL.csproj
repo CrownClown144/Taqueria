@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFC58F11-760E-4FF3-B4FB-DAB9D0072344}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BOL</RootNamespace>
+    <AssemblyName>BOL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bebida.cs" />
+    <Compile Include="BebidaDAL.cs" />
+    <Compile Include="Bebidas.cs" />
+    <Compile Include="Carne.cs" />
+    <Compile Include="CarneDAL.cs" />
+    <Compile Include="Carnes.cs" />
+    <Compile Include="Categoria.cs" />
+    <Compile Include="CategoriaDAL.cs" />
+    <Compile Include="Categorias.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteDAL.cs" />
+    <Compile Include="Clientes.cs" />
+    <Compile Include="Detalle_Pedido.cs" />
+    <Compile Include="Detalle_PedidoDAL.cs" />
+    <Compile Include="Detalle_Pedidos.cs" />
+    <Compile Include="Inventario.cs" />
+    <Compile Include="InventarioDAL.cs" />
+    <Compile Include="Inventarios.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="MenuDAL.cs" />
+    <Compile Include="Menus.cs" />
+    <Compile Include="Pedido.cs" />
+    <Compile Include="PedidoDAL.cs" />
+    <Compile Include="Pedidos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedor.cs" />
+    <Compile Include="ProveedorDAL.cs" />
+    <Compile Include="Proveedores.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioDAL.cs" />
+    <Compile Include="Usuarios.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{a0427fc8-2a92-4d7a-99de-902080f1f3d4}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
